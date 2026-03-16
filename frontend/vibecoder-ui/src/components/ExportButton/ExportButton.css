@@ -1,0 +1,41 @@
+.export-group {
+  display: flex;
+  gap: 6px;
+}
+
+.export-btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  font-family: inherit;
+}
+
+.export-xlsx {
+  background: #fff;
+  color: #1a1a2e;
+  border: 1px solid #dee2e6;
+}
+
+.export-xlsx:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.export-csv {
+  background: #fff;
+  color: #1a1a2e;
+  border: 1px solid #dee2e6;
+}
+
+.export-csv:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+}
+
+.export-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}

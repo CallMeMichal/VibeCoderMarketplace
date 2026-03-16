@@ -1,0 +1,132 @@
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+
+.product-table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.product-table th {
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #868e96;
+  white-space: nowrap;
+  position: relative;
+}
+
+.resize-handle {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 4px;
+  cursor: col-resize;
+  background: #dee2e6;
+  border-radius: 2px;
+  transition: background 0.15s;
+}
+
+.resize-handle:hover {
+  background: #868e96;
+}
+
+.product-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f3f5;
+  color: #343a40;
+  vertical-align: top;
+}
+
+.product-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cell-sku {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 12px;
+  color: #868e96;
+  white-space: nowrap;
+}
+
+.cell-title {
+  font-weight: 500;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cell-desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #868e96;
+  font-size: 12px;
+}
+
+.cell-price {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cell-stock {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.cell-stock-zero {
+  color: #e03131;
+  font-weight: 600;
+}
+
+.cell-ean {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 12px;
+  color: #868e96;
+  white-space: nowrap;
+}
+
+.color-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #f1f3f5;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #495057;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.empty-state-text {
+  font-size: 14px;
+  color: #adb5bd;
+  margin: 0;
+}
+
+.empty-state-hint {
+  font-size: 12px;
+  color: #ced4da;
+  margin-top: 6px;
+}
